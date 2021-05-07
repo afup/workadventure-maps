@@ -1,11 +1,4 @@
 { "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":80,
  "infinite":false,
  "layers":[
@@ -1010,7 +1003,7 @@
  "nextobjectid":1,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.2",
+ "tiledversion":"1.6.0",
  "tileheight":32,
  "tilesets":[
         {
@@ -1814,11 +1807,20 @@
          "transparentcolor":"#ff00ff"
         }, 
         {
+         "columns":6,
          "firstgid":2894,
-         "source":"title\/terrain.tsx"
+         "image":"title\/terrain.png",
+         "imageheight":288,
+         "imagewidth":192,
+         "margin":0,
+         "name":"terrain",
+         "spacing":0,
+         "tilecount":54,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
- "version":1.4,
+ "version":"1.6",
  "width":70
 }

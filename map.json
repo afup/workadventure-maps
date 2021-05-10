@@ -698,7 +698,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/les-tilleuls.coop\/fr"
+                 "value":"https:\/\/api-platform.com\/con\/2021"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1849,7 +1849,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {

@@ -43,11 +43,23 @@ WA.onEnterZone(zoneRollercoasterName, () => {
 })
 
 WA.onEnterZone(zoneJoindinName1, () => {
-    currentPopup =  WA.openPopup("popUpJoindin_1","Donnez votre avis !",[]);
+    currentPopup =  WA.openPopup("popUpJoindin_1","Donnez votre avis !",[{
+    	label: "Ouvrir dans un nouvel onglet",
+    	className: "popUpElement",
+    	callback: (popup => {
+    		WA.openTab("https://joind.in/event/afup-day-2021-toulouse");
+    	})
+    }]);
 })
 
 WA.onEnterZone(zoneJoindinName2, () => {
-    currentPopup =  WA.openPopup("popUpJoindin_2","Donnez votre avis !",[]);
+    currentPopup =  WA.openPopup("popUpJoindin_2","Donnez votre avis !",[{
+    	label: "Ouvrir dans un nouvel onglet",
+    	className: "popUpElement",
+    	callback: (popup => {
+    		WA.openTab("https://joind.in/event/afup-day-2021-toulouse");
+    	})
+    }]);
 })
 
 WA.onLeaveZone(zoneYogaName, closePopUp)

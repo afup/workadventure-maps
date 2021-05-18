@@ -4,6 +4,11 @@ var zoneRollercoasterName = "popupRollercoasterZone";
 var zoneJoindinName1 = "popupJoindinZone1";
 var zoneJoindinName2 = "popupJoindinZone2";
 
+var urlJoindin = "https://joind.in/event/afup-day-2021-lille";
+// "https://joind.in/event/afup-day-2021-lille",
+// "https://joind.in/event/afup-day-2021-toulouse"]
+
+
 WA.onEnterZone(zoneYogaName, () => {
 	var estimateStartDate = chrono("May 18 23:00:00 2021");
     currentPopup =  WA.openPopup("popUpYoga", "La Session de Yoga " + estimateStartDate ? "démarre dans" + estimateStartDate : " a démarrée", []);
@@ -47,7 +52,7 @@ WA.onEnterZone(zoneJoindinName1, () => {
     	label: "Ouvrir dans un nouvel onglet",
     	className: "popUpElement",
     	callback: (popup => {
-    		WA.openTab("https://joind.in/event/afup-day-2021-toulouse");
+    		WA.openTab(urlJoindin);
     	})
     }]);
 })
@@ -57,7 +62,7 @@ WA.onEnterZone(zoneJoindinName2, () => {
     	label: "Ouvrir dans un nouvel onglet",
     	className: "popUpElement",
     	callback: (popup => {
-    		WA.openTab("https://joind.in/event/afup-day-2021-toulouse");
+    		WA.openTab(urlJoindin);
     	})
     }]);
 })

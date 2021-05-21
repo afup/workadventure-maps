@@ -344,9 +344,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"openWebsite",
+                 "name":"jitsiRoom",
                  "type":"string",
-                 "value":"https:\/\/www.youtube.com\/embed\/vUF5DIy760I"
+                 "value":"AfupDay2021Est"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -374,9 +374,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"openWebsite",
+                 "name":"jitsiRoom",
                  "type":"string",
-                 "value":"https:\/\/www.youtube.com\/embed\/vUF5DIy760I"
+                 "value":"AfupDay2021Ouest"
                 }],
          "type":"tilelayer",
          "visible":true,

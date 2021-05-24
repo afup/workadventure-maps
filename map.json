@@ -1128,7 +1128,7 @@
         {
          "columns":5,
          "firstgid":1,
-         "image":"..\/..\/..\/..\/home\/kuraobi\/Documents\/AFUP\/afupday2021\/afup-32x32.png",
+         "image":"title\/afup-32x32.png",
          "imageheight":896,
          "imagewidth":160,
          "margin":0,
@@ -2255,13 +2255,13 @@
         {
          "columns":5,
          "firstgid":3154,
-         "image":"..\/..\/..\/..\/home\/kuraobi\/Documents\/AFUP\/afupday2021\/cities.png",
+         "image":"title\/cities.png",
          "imageheight":384,
          "imagewidth":160,
          "margin":0,
          "name":"cities",
          "spacing":0,
-         "tilecount":80,
+         "tilecount":60,
          "tileheight":32,
          "tiles":[
                 {

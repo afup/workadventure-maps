@@ -48,7 +48,7 @@ WA.onEnterZone(zoneRollercoasterName, () => {
 })
 
 WA.onEnterZone(zoneJoindinName1, () => {
-    currentPopup =  WA.openPopup("popUpJoindin_1","Donnez votre avis !",[{
+    currentPopup =  WA.openPopup("popUpJoindin_1","Donnez votre avis sur joind.in !",[{
     	label: "Ouvrir dans un nouvel onglet",
     	className: "popUpElement",
     	callback: (popup => {
@@ -58,7 +58,7 @@ WA.onEnterZone(zoneJoindinName1, () => {
 })
 
 WA.onEnterZone(zoneJoindinName2, () => {
-    currentPopup =  WA.openPopup("popUpJoindin_2","Donnez votre avis !",[{
+    currentPopup =  WA.openPopup("popUpJoindin_2","Donnez votre avis sur joind.in !",[{
     	label: "Ouvrir dans un nouvel onglet",
     	className: "popUpElement",
     	callback: (popup => {

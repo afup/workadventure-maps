@@ -18,8 +18,13 @@ WA.onEnterZone(zoneYogaName, () => {
 
 WA.onEnterZone(zoneWelcomeName, () => {
 	var texts = [
-		"Bienvenue à l'AfupDay 2021 ! Nous souhouaitons de profiter au maximum de cette journée 😮",
-		"Blah bla blha hbla"
+		"Bienvenue sur la plage de l’AFUP Day 2021 Lille/Rennes ! Voici quelques informations pour profiter des contenus exclusifs réservés à notre public.",
+		" Lors des pauses de midi et de l’après-midi, recueillez les débriefs à chaud des speakers dans les zones de chaque ville situées sous leur statues.",
+        "Posons-nous 15 min, après le déjeuner et à l’heure du goûter, le temps de respirer en pleine conscience avec notre prof de yoga, dans la zone de yoga située sur le sable. Namaste.",
+        "Passez à l’Open Bar entre 12h40 et 13h40 pour échanger avec nos experts PHP qui vous aideront à contribuer au langage et, peut être, partageront avec vous leurs secrets pour être au top niveau.",
+        "Installez-vous dans la zone de la cafeteria, près de l’Open Bar, pour discuter et même manger tous ensemble.",
+        "Bien sûr, passez voir nos sponsors installés dans leurs bungalows !",
+        "Enfin, fouillez la carte, trouvez les easter eggs, retrouvez les copains et les copines, et n’oubliez pas que le Code de Conduite s’applique même sur notre plage virtuelle !"
 	];
 	var page = 0;
 
@@ -29,10 +34,47 @@ WA.onEnterZone(zoneWelcomeName, () => {
         callback: (popup1 => {
             popup1.close();
             WA.openPopup("popUpWelcome", texts[page++],[{
-	            label: "Fermer",
+	            label: "Suivant",
 	            className: "popUpElement",
 	            callback: (popup2 => {
 	                popup2.close();
+                    WA.openPopup("popUpWelcome", texts[page++],[{
+                        label: "Suivant",
+                        className: "popUpElement",
+                        callback: (popup3 => {
+                            popup3.close();
+                            WA.openPopup("popUpWelcome", texts[page++],[{
+                                label: "Suivant",
+                                className: "popUpElement",
+                                callback: (popup4 => {
+                                    popup4.close();
+                                    WA.openPopup("popUpWelcome", texts[page++],[{
+                                        label: "Suivant",
+                                        className: "popUpElement",
+                                        callback: (popup5 => {
+                                            popup5.close();
+                                            WA.openPopup("popUpWelcome", texts[page++],[{
+                                                label: "Suivant",
+                                                className: "popUpElement",
+                                                callback: (popup6 => {
+                                                    popup6.close();
+                                                    WA.openPopup("popUpWelcome", texts[page++],[{
+                                                        label: "Fermer",
+                                                        className: "popUpElement",
+                                                        callback: (popup7 => {
+                                                            popup7.close();
+                                                        })
+                                                    }])
+                                                })
+                                            }])
+                                        })
+                                    }])
+                                })
+                            }])
+                        })
+                    }])
+
+
             	})
             }])
         })

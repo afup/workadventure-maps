@@ -12,7 +12,13 @@ var urlJoindin = "https://joind.in/event/afup-day-2021-lille";
 
 
 WA.onEnterZone(zoneYogaName, () => {
-	var estimateStartDate = chrono("May 18 23:00:00 2021");
+	var estimateStartDate = chrono([
+        "May 25 20:38:00 2021",
+        "May 28 13:30:00 2021",
+        "May 28 16:00:00 2021",
+        "May 28 13:40:00 2021",
+        "May 28 16:00:00 2021"
+        ]);
     currentPopup =  WA.openPopup("popUpYoga", "La Session de Yoga " + estimateStartDate ? "démarre dans" + estimateStartDate : " a démarrée", []);
 })
 
@@ -82,7 +88,7 @@ WA.onEnterZone(zoneWelcomeName, () => {
 })
 
 WA.onEnterZone(zoneRollercoasterName, () => {
-    currentPopup =  WA.openPopup("popUpRollercoaster","Durée d'attente estimée" + chrono("May 18 23:00:00 2031"),[{
+    currentPopup =  WA.openPopup("popUpRollercoaster","Durée d'attente estimée" + chrono(["May 18 23:00:00 2031"]),[{
         label: "Fermer",
         className: "popUpElement",
         callback: (popup => {
@@ -143,9 +149,14 @@ function puriel(value) {
 	return (value > 1) ? 's' : '';
 }
 
-function chrono(eventStart) {
+function chrono(eventStartArray) {
+    var eventStart = 0; i = 0;
 	var date1 = new Date();
-	var date2 = new Date (eventStart);
+    var date2;
+    do{
+	    date2 = new Date(eventStartArray[i++]);
+
+    } while ((date2 - date1) < 0)
 	var sec = (date2 - date1) / 1000;
 	var n = 24 * 3600;
 	var jours, heure, minute, seconde, result = 0;

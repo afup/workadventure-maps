@@ -3,6 +3,8 @@ var zoneWelcomeName = "popupWelcomeZone";
 var zoneRollercoasterName = "popupRollercoasterZone";
 var zoneJoindinName1 = "popupJoindinZone1";
 var zoneJoindinName2 = "popupJoindinZone2";
+var zoneOpenbar1 = "popupOpenbarZone1";
+var zoneOpenbar2 = "popupOpenbarZone2";
 
 var urlJoindin = "https://joind.in/event/afup-day-2021-lille";
 // "https://joind.in/event/afup-day-2021-lille",
@@ -67,11 +69,32 @@ WA.onEnterZone(zoneJoindinName2, () => {
     }]);
 })
 
+WA.onEnterZone(zoneOpenbar1, () => {
+    currentPopup =  WA.openPopup("popUpOpenbar1","- Open bar - Discution entre 12h40 et 13h40 avec nos experts.",[{
+        label: "Fermer",
+        className: "popUpElement",
+        callback: (popup => {
+            popup.close();
+        })
+    }]);
+})
+
+WA.onEnterZone(zoneOpenbar2, () => {
+    currentPopup =  WA.openPopup("popUpOpenbar2","- Cafétéria - papottez en reprenant des forces.",[{
+        label: "Fermer",
+        className: "popUpElement",
+        callback: (popup => {
+            popup.close();
+        })
+    }]);
+})
 WA.onLeaveZone(zoneYogaName, closePopUp)
 WA.onLeaveZone(zoneWelcomeName, closePopUp)
 WA.onLeaveZone(zoneRollercoasterName, closePopUp)
 WA.onLeaveZone(zoneJoindinName1, closePopUp)
 WA.onLeaveZone(zoneJoindinName2, closePopUp)
+WA.onLeaveZone(zoneOpenbar1, closePopUp)
+WA.onLeaveZone(zoneOpenbar2, closePopUp)
 
 
 function puriel(value) {

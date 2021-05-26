@@ -1,4 +1,5 @@
 var zoneYogaName = "popupYogaZone";
+var zoneFishingName = "popupFishingZone";
 var zoneWelcomeName = "popupWelcomeZone";
 var zoneRollercoasterName = "popupRollercoasterZone";
 var zoneJoindinName1 = "popupJoindinZone1";
@@ -20,6 +21,11 @@ WA.onEnterZone(zoneYogaName, () => {
         "May 28 16:00:00 2021"
         ]);
     currentPopup =  WA.openPopup("popUpYoga", "La Session de Yoga " + estimateStartDate ? "démarre dans" + estimateStartDate : " a démarrée", []);
+})
+
+
+WA.onEnterZone(zoneFishingName, () => {
+    currentPopup =  WA.openPopup("popUpFishing", "- Zone de pêche - Apportez votre équipement !!!", []);
 })
 
 WA.onEnterZone(zoneWelcomeName, () => {
@@ -137,6 +143,7 @@ WA.onEnterZone(zoneOpenbar2, () => {
     }]);
 })
 WA.onLeaveZone(zoneYogaName, closePopUp)
+WA.onLeaveZone(zoneFishingName, closePopUp)
 WA.onLeaveZone(zoneWelcomeName, closePopUp)
 WA.onLeaveZone(zoneRollercoasterName, closePopUp)
 WA.onLeaveZone(zoneJoindinName1, closePopUp)

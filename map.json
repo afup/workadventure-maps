@@ -255,7 +255,7 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":"ValidCoupsRecognizeWeirdly"
+                 "value":"ValidCoupsRecognizeWeirdly_3"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -273,7 +273,7 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":"ValidCoupsRecognizeWeirdly"
+                 "value":"ValidCoupsRecognizeWeirdly_2"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -291,7 +291,7 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":"ValidCoupsRecognizeWeirdly"
+                 "value":"ValidCoupsRecognizeWeirdly_1"
                 }],
          "type":"tilelayer",
          "visible":true,

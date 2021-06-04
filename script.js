@@ -7,10 +7,7 @@ var zoneJoindinName2 = "popupJoindinZone2";
 var zoneOpenbar1 = "popupOpenbarZone1";
 var zoneOpenbar2 = "popupOpenbarZone2";
 
-var urlJoindin = "https://joind.in/event/afup-day-2021-lille";
-// "https://joind.in/event/afup-day-2021-lille",
-// "https://joind.in/event/afup-day-2021-toulouse"]
-
+var urlJoindin = "https://joind.in/event/afup-day-2021-toulouse";
 
 WA.onEnterZone(zoneYogaName, () => {
 	var estimateStartDate = chrono([
@@ -30,7 +27,7 @@ WA.onEnterZone(zoneFishingName, () => {
 
 WA.onEnterZone(zoneWelcomeName, () => {
 	var texts = [
-		"Bienvenue sur la plage de l’AFUP Day 2021 Lille/Rennes ! Voici quelques informations pour profiter des contenus exclusifs réservés à notre public.",
+		"Bienvenue sur la plage de l’AFUP Day 2021 Toulouse/Tours ! Voici quelques informations pour profiter des contenus exclusifs réservés à notre public.",
 		" Lors des pauses de midi et de l’après-midi, recueillez les débriefs à chaud des speakers dans les zones de chaque ville situées sous leur statues.",
         "Posons-nous 15 min, après le déjeuner et à l’heure du goûter, le temps de respirer en pleine conscience avec notre prof de yoga, dans la zone de yoga située sur le sable. Namaste.",
         "Passez à l’Open Bar entre 12h40 et 13h40 pour échanger avec nos experts PHP qui vous aideront à contribuer au langage et, peut être, partageront avec vous leurs secrets pour être au top niveau.",

@@ -11,11 +11,8 @@ var urlJoindin = "https://joind.in/event/afup-day-2021-toulouse";
 
 WA.onEnterZone(zoneYogaName, () => {
 	var estimateStartDate = chrono([
-        "May 25 20:38:00 2021",
-        "May 28 13:30:00 2021",
-        "May 28 16:00:00 2021",
-        "May 28 13:40:00 2021",
-        "May 28 16:00:00 2021"
+        "June 11 13:40:00 2021",
+        "June 11 16:00:00 2021"
         ]);
     currentPopup =  WA.openPopup("popUpYoga", "La Session de Yoga " + estimateStartDate ? "démarre dans" + estimateStartDate : " a démarrée", []);
 })
